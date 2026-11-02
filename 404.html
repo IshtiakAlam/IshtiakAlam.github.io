@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found | Ishtiak Alam</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F4F4F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C1C1C" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<script>
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>
+  :root { --bg: #F4F4F4; --text: #1C1C1C; --body: #3A3631; --num: #7A5F42; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #1C1C1C; --text: #F4F4F4; --body: #D4C5B0; --num: #BFA181; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #1C1C1C; --text: #F4F4F4; --body: #D4C5B0; --num: #BFA181; color-scheme: dark; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; display: grid; place-items: center;
+    background: var(--bg); color: var(--text);
+    font-family: "Archivo", "Helvetica Neue", Arial, system-ui, sans-serif; line-height: 1.6;
+    padding: env(safe-area-inset-top, 0px) 1.5rem env(safe-area-inset-bottom, 0px);
+  }
+  main { max-width: 34rem; }
+  .code { margin: 0; font-size: clamp(4rem, 3rem + 6vw, 7rem); font-weight: 820; font-stretch: 125%; color: var(--num); line-height: 1; letter-spacing: -.04em; }
+  h1 { margin: 1rem 0 .5rem; font-size: 1.8rem; font-weight: 740; font-stretch: 112%; letter-spacing: -.02em; line-height: 1.1; }
+  p { margin: 0 0 1.75rem; color: var(--body); }
+  a { display: inline-block; background: #BFA181; color: #1C1C1C; font-weight: 650; text-decoration: none; padding: .85rem 1.35rem; border-radius: 999px; }
+  a:hover { background: #A8875F; }
+  a:focus-visible { outline: 2px solid var(--num); outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="code" aria-hidden="true">404</p>
+  <h1>This page doesn’t exist</h1>
+  <p>The link may be out of date, or the address may have a typo.</p>
+  <a href="/">Go to the home page</a>
+</main>
+</body>
+</html>
